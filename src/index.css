@@ -51,9 +51,7 @@ h1,
 h2,
 h3,
 h4 {
-  letter-spacing: var(--spacing);
-  text-transform: capitalize;
-  line-height: 1.25;
+  line-height: 1.5;
   margin-bottom: 0.75rem;
 }
 h1 {
@@ -71,7 +69,8 @@ h4 {
 
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+  line-height: 1.5;
+  
 }
 
 #name {
@@ -100,6 +99,16 @@ p {
   h3,
   h4 {
     line-height: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  h3{
+    font-size: 22px;
+  }
+
+  p{
+    font-size: 18px;
   }
 }
 
@@ -218,6 +227,21 @@ nav {
   .logo {
     display: none;
   }
+
+.links-container {
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+} 
+  
+  .links a:hover {
+  background: transparent;
+  color: var(--clr-font);
+  font-weight:normal;
+  
+}
 }
 
 /*
@@ -298,7 +322,7 @@ Hero
 
   .hero-image-div {
     margin-top: -20px;
-    width: 400px;
+    width: 370px;
   }
 
   .hero-text-div {
@@ -307,6 +331,8 @@ Hero
     align-items: center;
     text-align: center;
     font-size: 70px;
+    width: 370px;
+    
   }
 
   .hero-text {
@@ -401,11 +427,13 @@ projects
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 0;
+    padding-left: 50px;
+    width: 100%;
+
   }
 
   .projects-text {
-    max-width: 1370px;
+    max-width: 768px;
     padding: 10px 10px;
     margin: auto;
     margin-top: 5rem;
@@ -459,8 +487,15 @@ Card
   .card {
     background: var(--clr-bcg);
     padding: 20px;
-    margin: 25px;
+    margin: 30px;
+    height: 100%;
+    width: 300px;
   }
+  .img {
+  width: 260px;
+  height: 200px;
+  margin-top: -30px;
+}
 }
 
 /*
@@ -490,11 +525,10 @@ about
 .about-image {
   margin-top: -40px;
   width: 400px;
-  height: 50px;
+  height: 10px;
 }
 
 .about-text {
-  font-size: 24px;
   line-height: 40px;
 }
 
@@ -503,13 +537,13 @@ about
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .about-image {
     margin-top: -60px;
     margin-left: 80px;
-    width: 300px;
+    width: 280px;
     margin-bottom: 50px;
   }
 
@@ -519,6 +553,7 @@ about
     align-items: center;
     text-align: center;
     margin-top: 250px;
+    margin: 250px 22px 0px;
   }
 }
 
@@ -554,14 +589,19 @@ MySkills
 }
 
 @media (max-width: 768px) {
+  .skills-container {
+  padding-top: 1px;
+}
+
   .skills-cards {
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
+    margin-top: -60px;
   }
 
   .skill {
-    margin: 50px;
+    margin: 70px 50px;
     padding: 0;
     height: 300px;
   }
@@ -611,6 +651,14 @@ courses
   height: 70px;
 }
 
+.courses-text {
+  max-width: 1370px;
+  padding: 10px 10px;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+
 .organization * {
   width: 50px;
   height: 30px;
@@ -626,10 +674,26 @@ courses
 }
 
 @media (max-width: 768px) {
+  .courses-container {
+  background: var(--clr-bcg);
+  padding-top: -40px;
+}
+
+  .courses-text {
+    max-width: 768px;
+    padding: 10px 10px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .courses-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .course-card {

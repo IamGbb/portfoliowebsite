@@ -5,7 +5,7 @@ import {CourseCard} from  './CourseCard'
 const Courses = () => {
   return (
     <div className="courses-container" id="courses">
-        <div className="projects-text">
+        <div className="courses-text">
             <h2>Courses I've Done</h2>
             <div className="courses-list">
             {courses.map((course) => {

@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import {Link} from "react-scroll"
 import { FaBars, FaSun, FaMoon } from 'react-icons/fa'
-import { links, social } from '../data'
-import logo from '../images/logo.svg'
+import { links } from '../data'
 import logo_dark from '../images/logo-01.svg'
 import logo_light from '../images/logo-02.svg'
 

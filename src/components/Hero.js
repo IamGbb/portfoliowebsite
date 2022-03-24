@@ -29,8 +29,8 @@ const Hero = () => {
                 <span>a full-stack developer</span>
               </p>
               <SocialMedia />
-                <button className="button" onClick={() => {window.location.href = 'mailto:giladmta@gmail.com'}}>
-                  Contact Me
+                <button className="button" onClick={() => {window.location.href = 'https://drive.google.com/file/d/1HTvK4H1i5dgDWY496pXoV5IF5QmLPpwr/view?usp=sharing'}}>
+                  My CV
                 </button>
           </div>
 

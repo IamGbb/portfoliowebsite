@@ -17,8 +17,8 @@ const Card = ({project}) => {
         </div>
         <span>{project.technologies}</span>
         <div className='link-icons'>
-            <a href={project.linkGit}><FaGithub/></a>
-            <a href={project.linkWeb}><BiLinkExternal/></a>
+            <a href={project.linkGit} className='icon-button'><FaGithub/></a>
+            <a href={project.linkWeb} className='icon-button'><BiLinkExternal/></a>
         </div>
     </article>
   )

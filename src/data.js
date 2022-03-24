@@ -56,28 +56,28 @@ export const social = [
 export const projects = [
 {
   id: 1,
-  name: 'NoteJs',
+  name: 'Note',
   image: notejs,
-  description: 'e-commerce music shop. Backend & Frontend, including user registration, payment with paypal and admin permissions and dashboard',
-  technologies: 'NodeJs, React, MongoDB, CSS, React Bootstrap, redux, axios',
+  description: 'e-commerce music shop. Backend & Frontend, including user registration, payment with paypal, admin permissions and dashboard.',
+  technologies: 'NodeJs, React, MongoDB, CSS, React Bootstrap, Redux, Axios',
   linkWeb: 'https://notejsmusicshop.herokuapp.com/',
   linkGit:'https://github.com/IamGbb/NoteJs'
 },
 {
   id: 2,
-  name: 'Restaurant Menu',
-  image: restaurant,
-  description: 'Restaurant menu with filters',
-  technologies: 'React, JavaScript, CSS',
-  linkWeb: 'https://menuwithfilters.netlify.app/',
-  linkGit:'https://github.com/IamGbb/restaurantMenu'
+  name: 'Trivia',
+  image: trivia,
+  description: 'React based quiz. the quizzes are fetched from an external API. The app counts right and wrong answers and gives a final score at the end.',
+  technologies: 'React, CSS, Context API, lottie, Axios',
+  linkWeb: 'https://whatdoyouknow.netlify.app/',
+  linkGit:'https://github.com/IamGbb/TriviaQuiz'
 },
 {
   id: 3,
   name: 'WikiCocktails',
   image: cocktails,
-  description: 'A cocktail dictionary with search bar',
-  technologies: 'React, JavaScript, CSS, contextAPI, lottie',
+  description: 'A cocktail dictionary. The data is fetched from an external api. I added search functionality to browse through the cocktails',
+  technologies: 'React, CSS, Context API, lottie',
   linkWeb: 'https://wikicocktail.netlify.app/cocktail/13501/',
   linkGit:'https://github.com/IamGbb/WikiCocktail'
 },
@@ -85,38 +85,38 @@ export const projects = [
   id: 4,
   name: 'BMI Calculator',
   image: bmi,
-  description: 'Calculate your BMI with a fun interactive calculator',
+  description: 'An HTML based BMI calculator with interactive lottie animation that responds to the results.',
   technologies: 'HTML, CSS, JavaScript, Lottie',
   linkWeb: 'https://iamgbb.github.io/BMI-calculator/',
   linkGit:'https://github.com/IamGbb/BMI-calculator'
 },
 {
   id: 5,
-  name: 'Trivia',
-  image: trivia,
-  description: 'Fun quiz with different subjects',
-  technologies: 'React, JavaScript, CSS, contextAPI, lottie',
-  linkWeb: 'https://whatdoyouknow.netlify.app/',
-  linkGit:'https://github.com/IamGbb/TriviaQuiz'
-},
-{
-  id: 6,
   name: 'Color Picker',
   image: colors,
-  description: 'Generate a color and copy it to your clipboard',
+  description: "A color generator made with react and values.js. the user can search a color and it's shades, and copy the color's number to his clipboard",
   technologies: 'React, CSS, values.js, react-color',
   linkWeb: 'https://chooseacolor.netlify.app/',
   linkGit:'https://github.com/IamGbb/react-color-picker'
 },
 {
-  id: 7,
+  id: 6,
   name: 'Simon game',
   image: simon,
-  description: 'play the simon game',
+  description: "An HTML based 'Simon's Game', where the user needs to follow the pattern given to him by a random function.",
   technologies: 'HTML, CSS, JavaScript, jQuery',
   linkWeb: 'https://iamgbb.github.io/Simon-Game/',
   linkGit:'https://github.com/IamGbb/Simon-Game'
-}
+},
+{
+  id: 7,
+  name: 'Restaurant Menu',
+  image: restaurant,
+  description: 'A react based restaurant menu. The items in the UI can be filtered by category',
+  technologies: 'React, CSS',
+  linkWeb: 'https://menuwithfilters.netlify.app/',
+  linkGit:'https://github.com/IamGbb/restaurantMenu'
+},
 ]
 
 export const skills = [

@@ -6,14 +6,13 @@ const SocialMedia = () => {
     <div className="social-media-div">
         {social.map((link) => {
             return(
-            <div key={link.id}> 
-            <a href={link.url}
-            className='icon-button socialIcon'
+            <div> 
+            <a href={link.url} key={link.id}
+            className='icon-button'
             target="_blank"
             rel="noopener noreferrer"
              >
             {link.icon}
-            <span></span>
             </a>
             </div>
       

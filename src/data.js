@@ -59,7 +59,7 @@ export const projects = [
   name: 'Note',
   image: notejs,
   description: 'e-commerce music shop. Backend & Frontend, including user registration, payment with paypal, admin permissions and dashboard.',
-  technologies: 'NodeJs, React, MongoDB, CSS, React Bootstrap, Redux, Axios',
+  technologies: 'NodeJs, Express, JWT, React, MongoDB, CSS, React Bootstrap, Redux, Axios',
   linkWeb: 'https://notejsmusicshop.herokuapp.com/',
   linkGit:'https://github.com/IamGbb/NoteJs'
 },
